@@ -1,4 +1,4 @@
-# react-quiz
+# React-Redux Quiz
 
 * To run the file open command prompt.
 * Change the drive to respective location.

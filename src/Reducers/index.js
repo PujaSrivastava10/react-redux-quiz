@@ -33,7 +33,9 @@ const data=(state={timerStatus:true},actions)=>{
           var totalQues=0;
           state.json.map((value,k)=>
           {totalMarks=totalMarks+state.json[k].marks;
-          totalQues=totalQues+1;})
+          totalQues=totalQues+1;
+           return 0;}
+          )
           data=Object.assign({},state,{marks:marks,totalQues:totalQues,correctAns:correctAns,timeOver:actions.timeOver,showResult:true,totalMarks:totalMarks})
           //console.log('finish quiz reducer',data);
           return data;
